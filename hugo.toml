@@ -1,0 +1,57 @@
+baseURL = "https://zhangyuhui.github.io/"
+defaultContentLanguage = "zh-cn"
+locale = "zh-cn"
+title = "张裕惠的博客"
+theme = "PaperMod"
+
+[params]
+  author = "张裕惠"
+  description = "技术笔记 | 学习心得 | 生活随笔"
+  defaultTheme = "auto"
+  ShowShareButtons = true
+  ShowReadingTime = true
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  ShowToc = true
+
+  [params.homeInfoParams]
+    Title = "👋 你好，我是张裕惠"
+    Content = "Java 实习生 / 在学习的路上 / 记录技术与生活"
+
+  [[params.socialIcons]]
+    name = "github"
+    url = "https://github.com/zhangyuhui"
+
+[menu]
+  [[menu.main]]
+    identifier = "tech"
+    name = "💻 技术笔记"
+    url = "/tags/技术/"
+    weight = 10
+
+  [[menu.main]]
+    identifier = "life"
+    name = "📖 生活随笔"
+    url = "/tags/生活/"
+    weight = 20
+
+  [[menu.main]]
+    identifier = "archive"
+    name = "📁 归档"
+    url = "/archives/"
+    weight = 30
+
+  [[menu.main]]
+    identifier = "search"
+    name = "🔍 搜索"
+    url = "/search/"
+    weight = 40
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+[markup]
+  [markup.highlight]
+    style = "dracula"
+    lineNos = true
